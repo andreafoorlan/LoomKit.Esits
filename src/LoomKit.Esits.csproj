@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>10.0.0</Version>
+    <PackageId>LoomKit.Esits</PackageId>
+    <Authors>Andrea Furlan</Authors>
+    <Description>A lightweight Result/Either-style outcome type for .NET: Esit and Esit&lt;TValue&gt; represent a success or a structured Error without relying on exceptions for control flow, with Map/Match/Switch helpers and a set of common GenericErrors factories.</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/andreafoorlan/LoomKit.Esits</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/andreafoorlan/LoomKit.Esits</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>result;railway;errors;functional;dotnet</PackageTags>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <Copyright>Copyright (c) 2026 Andrea Furlan</Copyright>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="8.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
