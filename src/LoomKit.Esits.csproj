@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>10.0.1</Version>
+    <Version>10.0.2</Version>
     <PackageId>LoomKit.Esits</PackageId>
     <Authors>Andrea Furlan</Authors>
     <Description>A lightweight Result/Either-style outcome type for .NET: Esit and Esit&lt;TValue&gt; represent a success or a structured Error without relying on exceptions for control flow, with Map/Match/Switch helpers and a set of common GenericErrors factories.</Description>

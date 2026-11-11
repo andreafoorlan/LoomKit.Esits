@@ -93,4 +93,14 @@ public class GenericErrorsTests
         Assert.Equal(GenericErrors.Unexpected, error.Code);
         Assert.Equal("failed", error.Message);
     }
+
+    [Fact]
+    public void UnexpectedError_KeepsOriginalException()
+    {
+        var exception = new InvalidOperationException("failed");
+
+        var error = GenericErrors.UnexpectedError(exception);
+
+        Assert.Same(exception, error.Exception);
+    }
 }

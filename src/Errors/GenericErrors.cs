@@ -34,5 +34,5 @@ public static class GenericErrors
     public static Error UnauthorizedFlowError(string? message = null) => new(Unauthorized, string.Empty, message ?? "Unauthorized");
     public static Error ForbiddenError(string? message = null) => new(Forbidden, string.Empty, message ?? "Forbidden");
     public static Error UnsuccessfulHttpStatusCodeError(HttpStatusCode statusCode) => new(UnsuccessfulHttpStatusCode, statusCode.ToString(), $"Unsuccessful http status code ({statusCode})");
-    public static Error UnexpectedError(Exception exception) => new(Unexpected, "Exception", exception.Message);
+    public static Error UnexpectedError(Exception exception) => new(Unexpected, "Exception", exception.Message, exception);
 }
